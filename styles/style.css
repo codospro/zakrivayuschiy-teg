@@ -72,7 +72,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.3em;
 }
 
 .theme-menu__button {
@@ -127,7 +127,7 @@
   content: '▶';
 
   position: absolute;
-  inset-inline-start: -20px;
+  inset: 0 100px 0 0;
 
   animation: moving 0.5s infinite ease-in-out alternate;
   /* animation-name: moving;
@@ -246,13 +246,12 @@
 }
 
 .button:focus-visible {
-  outline: 2px solid var(--accent-color);
   box-shadow: 2px 2px 0 currentColor;
 }
 
 .card__like-button {
-  inline-size: 126px;
-  block-size: 34px;
+  min-inline-size: 126px;
+  min-block-size: 34px;
 }
 
 .button__text {

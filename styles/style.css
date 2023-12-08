@@ -127,7 +127,8 @@
   content: '▶';
 
   position: absolute;
-  inset: 0 100px 0 0;
+  inset: 0;
+  inset-inline: -20px auto;
 
   animation: moving 0.5s infinite ease-in-out alternate;
   /* animation-name: moving;
@@ -167,6 +168,8 @@
 
   inline-size: 100%;
   aspect-ratio: 1/1;
+
+  border: 2px solid var(--accent-color, #000);
 }
 
 .card__content {
@@ -239,10 +242,6 @@
 
 .button:hover .footer__icon {
   color: var(--bg-color);
-}
-
-.button:focus {
-  outline: none;
 }
 
 .button:focus-visible {
